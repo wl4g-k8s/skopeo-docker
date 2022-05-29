@@ -1,0 +1,48 @@
+registry.cn-hangzhou.aliyuncs.com:
+  #credentials:
+  #    username: xx
+  #    password: xx
+  #tls-verify: true
+  #cert-dir: /etc/skopeo/certs
+  #images:
+  #    busybox: []
+  #    redis:
+  #        - "1.0"
+  #        - "2.0"
+  #        - "sha256:0000000000000000000000000000000011111111111111111111111111111111"
+  images-by-tag-regex:
+    google_containers/kube-scheduler: ^v1\.1[89]\.[0123456789]$|^v1\.2[0123456789]\.[0123456789]$
+    #google_containers/kube-apiserver: ^v1\.1[89]\.[0123456789]$|^v1\.2[0123456789]\.[0123456789]$
+    #google_containers/kube-controller-manager: ^v1\.1[89]\.[0123456789]$|^v1\.2[0123456789]\.[0123456789]$
+    #google_containers/kubelet: ^v1\.1[89]\.[0123456789]$|^v1\.2[0123456789]\.[0123456789]$
+    #google_containers/kube-proxy: ^v1\.1[89]\.[0123456789]$|^v1\.2[0123456789]\.[0123456789]$
+    #google_containers/pause: ^3\.[01234567]
+    #google_containers/metrics-server: ^v[01]\.[0123456789]
+docker.io:
+  images-by-tag-regex:
+    #redis: ^[34567]\.[0123456789](-alpine*)
+    #nginx: ^[1]\.[0123456789](-alpine*)
+    #calico/cni: ^v3\.[0123456789]\.[0123456789]
+    #calico/node: ^v3\.[0123456789]\.[0123456789]
+    #calico/pod2daemon-flexvol: ^v3\.[0123456789]\.[0123456789]
+    #goharbor/harbor-core: ^v2\.[234567]\.[0123456789]$
+    #goharbor/harbor-db: ^v2\.[234567]\.[0123456789]$
+    #goharbor/harbor-jobservice: ^v2\.[234567]\.[0123456789]$
+    #goharbor/nginx-photon: ^v2\.[234567]\.[0123456789]$
+    #goharbor/redis-photon: ^v2\.[234567]\.[0123456789]$
+    #goharbor/trivy-adapter-photon: ^v2\.[234567]\.[0123456789]$
+    #library/alpine: ^3\.[0123456789]$
+    #coredns/coredns: ^1\.[123456789]$
+    #kubesphere/etcd: ^3\.[3456789]\.[0123456789]$
+    #kubesphere/ks-controller-manager: ^3\.[3456789]\.[0123456789]$
+    #kubesphere/ks-apiserver: ^3\.[3456789]\.[0123456789]$
+    #kubesphere/kubefed: ^[01]\.[0123456789]\.[0123456789]$
+    #kubesphere/kube-events-operator: ^[01]\.[0123456789]\.[0123456789]$
+    #fluent/fluent-bit: ^1\.[123456789]\.[0123456789]$
+    #fluent/fluent-bit-kubernetes-daemonset: ^[012]\.[123456789]\.[0123456789]$
+    #rancher/rancher: ^v2\.[123456789]
+    #rancher/server: ^v1\.[123456789]\.[0123456789]$
+    #rancher/agent: ^v2\.[123456789]
+#quay.io:
+#  images-by-tag-regex:
+#    metallb/speaker: ^v[012]\.[0123456789]
