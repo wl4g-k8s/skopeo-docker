@@ -19,54 +19,54 @@ registry.cn-hangzhou.aliyuncs.com:
     google_containers/etcd: ^v3\.[01234567]\.[0123456789]
     google_containers/coredns: ^1\.[123456789]\.[0123456789]$
     google_containers/metrics-server: ^v[01]\.[0123456789]
-#docker.io:
-#  images-by-tag-regex:
-#    redis: ^[34567]\.[0123456789](-alpine*)
-#    nginx: ^[1]\.[0123456789](-alpine*)
-#    calico/cni: ^v3\.[0123456789]\.[0123456789]$
-#    calico/node: ^v3\.[0123456789]\.[0123456789]$
-#    calico/pod2daemon-flexvol: ^v3\.[0123456789]\.[0123456789]
-#    goharbor/harbor-core: ^v2\.[234567]\.[0123456789]$
-#    goharbor/harbor-db: ^v2\.[234567]\.[0123456789]$
-#    goharbor/harbor-jobservice: ^v2\.[234567]\.[0123456789]$
-#    goharbor/nginx-photon: ^v2\.[234567]\.[0123456789]$
-#    goharbor/redis-photon: ^v2\.[234567]\.[0123456789]$
-#    goharbor/trivy-adapter-photon: ^v2\.[234567]\.[0123456789]$
-#    library/alpine: ^3\.[0123456789]\.[0123456789]$
-#    coredns/coredns: ^1\.[123456789]\.[0123456789]$
-#    rancher/rancher: ^v2-([a-z0-9]+)-linux-amd64
-#    rancher/server: ^v1\.[0123456789]+\.[0123456789]$
-#    rancher/agent: ^v2\.[0123456789]+
-#    kubesphere/etcd: ^v3\.[23456789]+\.[0123456789]
-#    kubesphere/ks-controller-manager: ^v[23]\.[0123456789]\.[0123456789]$
-#    kubesphere/ks-apiserver: ^v[23]\.[0123456789]\.[0123456789]$
-#    kubesphere/kubefed: ^v[012]\.[0123456789]\.[0123456789]$
-#    kubesphere/kube-events-operator: ^v[012]\.[0123456789]\.[0123456789]$
-#    fluent/fluent-bit: ^1\.[123456789]\.[0123456789]$
-#    fluent/fluent-bit-kubernetes-daemonset: ^[012]\.[123456789]\.[0123456789]$
-#    elasticsearch: ^[5678]\.[0123456789]+\.[0123456789]$
-#    kibana: ^[5678]\.[0123456789]+\.[0123456789]$
-#    prom/prometheus: ^v[23]\.[0123456789]+\.[0123456789]$
-#    prom/node-exporter: ^v[12]\.[0123456789]+\.[0123456789]$
-#    prom/mysqld-exporter: ^v[01]\.[0123456789]+\.[0123456789]$
-#    prom/haproxy-exporter: ^v[01]\.[0123456789]+\.[0123456789]$
-#    prom/alertmanager: ^v[012]\.[0123456789]+\.[0123456789]$
-#    prom/influxdb-exporter: ^v[012]\.[0123456789]+\.[0123456789]$
-#    prom/pushgateway: ^v[12]\.[0123456789]+\.[0123456789]$
-#    prom/collectd-exporter: ^v[012]\.[0123456789]+\.[0123456789]$
-#    grafana/loki: ^main-([a-z0-9]+)$|^main-([a-z0-9]+)-amd64$
-#    grafana/grafana: ^[56789]\.[0123456789]+\.[0123456789]$
-#    jaegertracing/jaeger-collector: ^1\.[123456789]+\.[0123456789]$
-#    jaegertracing/jaeger-agent: ^1\.[123456789]+\.[0123456789]$
-#    jaegertracing/jaeger-operator: ^1\.[123456789]+\.[0123456789]$
-#    jaegertracing/jaeger-ingester: ^1\.[123456789]+\.[0123456789]$
-#    jaegertracing/jaeger-ingester-snapshot: ^1\.[123456789]+\.[0123456789]$
-#    jaegertracing/jaeger-query: ^1\.[123456789]+\.[0123456789]$
-#    jaegertracing/jaeger-query-snapshot: ^1\.[123456789]+\.[0123456789]$
-#    jaegertracing/all-in-one: ^1\.[123456789]+\.[0123456789]$
-#    jaegertracing/jaeger-cassandra-schema: ^1\.[123456789]+\.[0123456789]$
-#    jaegertracing/jaeger-es-index-cleaner: ^1\.[123456789]+\.[0123456789]$
-#quay.io:
-#  images-by-tag-regex:
-#    metallb/speaker: ^v[012]\.[0123456789]
-#    coreos/etcd: ^v3\.[0123456789]+\.[0123456789]+$|^3\.[0123456789]+\.[0123456789]+$
+docker.io:
+  images-by-tag-regex:
+    redis: ^[34567]\.[0123456789](-alpine*)
+    nginx: ^[1]\.[0123456789](-alpine*)
+    calico/cni: ^v3\.[0123456789]([0123456789])*\.[0123456789]([0123456789]*)$
+    calico/node: ^v3\.[0123456789]([0123456789])*\.[0123456789]([0123456789]*)$
+    calico/pod2daemon-flexvol: ^v3\.[0123456789]([0123456789])*\.[0123456789]([0123456789]*)$
+    goharbor/harbor-core: ^v2\.[234567]\.[0123456789]$
+    goharbor/harbor-db: ^v2\.[234567]\.[0123456789]$
+    goharbor/harbor-jobservice: ^v2\.[234567]\.[0123456789]$
+    goharbor/nginx-photon: ^v2\.[234567]\.[0123456789]$
+    goharbor/redis-photon: ^v2\.[234567]\.[0123456789]$
+    goharbor/trivy-adapter-photon: ^v2\.[234567]\.[0123456789]$
+    library/alpine: ^3\.[0123456789]\.[0123456789]$
+    coredns/coredns: ^1\.[123456789]\.[0123456789]$
+    rancher/rancher: ^v2-([a-z0-9]+)-linux-amd64
+    rancher/server: ^v1\.[0123456789]+\.[0123456789]$
+    rancher/agent: ^v2\.[0123456789]+
+    kubesphere/etcd: ^v3\.[23456789]+\.[0123456789]
+    kubesphere/ks-controller-manager: ^v[23]\.[0123456789]\.[0123456789]$
+    kubesphere/ks-apiserver: ^v[23]\.[0123456789]\.[0123456789]$
+    kubesphere/kubefed: ^v[012]\.[0123456789]\.[0123456789]$
+    kubesphere/kube-events-operator: ^v[012]\.[0123456789]\.[0123456789]$
+    fluent/fluent-bit: ^1\.[123456789]\.[0123456789]$
+    fluent/fluent-bit-kubernetes-daemonset: ^[012]\.[123456789]\.[0123456789]$
+    elasticsearch: ^[5678]\.[0123456789]+\.[0123456789]$
+    kibana: ^[5678]\.[0123456789]+\.[0123456789]$
+    prom/prometheus: ^v[23]\.[0123456789]+\.[0123456789]$
+    prom/node-exporter: ^v[12]\.[0123456789]+\.[0123456789]$
+    prom/mysqld-exporter: ^v[01]\.[0123456789]+\.[0123456789]$
+    prom/haproxy-exporter: ^v[01]\.[0123456789]+\.[0123456789]$
+    prom/alertmanager: ^v[012]\.[0123456789]+\.[0123456789]$
+    prom/influxdb-exporter: ^v[012]\.[0123456789]+\.[0123456789]$
+    prom/pushgateway: ^v[12]\.[0123456789]+\.[0123456789]$
+    prom/collectd-exporter: ^v[012]\.[0123456789]+\.[0123456789]$
+    grafana/loki: ^main-([a-z0-9]+)$|^main-([a-z0-9]+)-amd64$
+    grafana/grafana: ^[56789]\.[0123456789]+\.[0123456789]$
+    jaegertracing/jaeger-collector: ^1\.[123456789]+\.[0123456789]$
+    jaegertracing/jaeger-agent: ^1\.[123456789]+\.[0123456789]$
+    jaegertracing/jaeger-operator: ^1\.[123456789]+\.[0123456789]$
+    jaegertracing/jaeger-ingester: ^1\.[123456789]+\.[0123456789]$
+    jaegertracing/jaeger-ingester-snapshot: ^1\.[123456789]+\.[0123456789]$
+    jaegertracing/jaeger-query: ^1\.[123456789]+\.[0123456789]$
+    jaegertracing/jaeger-query-snapshot: ^1\.[123456789]+\.[0123456789]$
+    jaegertracing/all-in-one: ^1\.[123456789]+\.[0123456789]$
+    jaegertracing/jaeger-cassandra-schema: ^1\.[123456789]+\.[0123456789]$
+    jaegertracing/jaeger-es-index-cleaner: ^1\.[123456789]+\.[0123456789]$
+quay.io:
+  images-by-tag-regex:
+    metallb/speaker: ^v[012]\.[0123456789]
+    coreos/etcd: ^v3\.[0123456789]+\.[0123456789]+$|^3\.[0123456789]+\.[0123456789]+$
